@@ -31,15 +31,15 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tI1-vx-Xj0">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tI1-vx-Xj0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Sqd-cz-htu">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sqd-cz-htu" id="6JI-Tg-Qw9">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -50,6 +50,7 @@
                         <constraints>
                             <constraint firstItem="tI1-vx-Xj0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fad-f5-hVs"/>
                             <constraint firstItem="tI1-vx-Xj0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ooi-hb-kdb"/>
+                            <constraint firstItem="fDC-JC-NeO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="X2H-06-O26"/>
                             <constraint firstItem="tI1-vx-Xj0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dVq-iU-0kj"/>
                             <constraint firstItem="fDC-JC-NeO" firstAttribute="top" secondItem="tI1-vx-Xj0" secondAttribute="bottom" id="eG1-Gd-0IM"/>
                         </constraints>
