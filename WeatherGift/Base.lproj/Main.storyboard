@@ -25,7 +25,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="S9p-eo-V2Z"/>
                                     <barButtonItem image="list.bullet" catalog="system" id="sg1-Jb-dZq">
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" id="DP3-tV-CIM"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="DP3-tV-CIM"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -101,11 +101,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LocationListViewController" customModule="WeatherGift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fDC-JC-NeO">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Edit" id="fzs-Mf-JFC">
