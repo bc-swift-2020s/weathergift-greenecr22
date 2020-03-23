@@ -17,6 +17,7 @@
 		EACF3C7B2416D6F200C5091D /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACF3C7A2416D6F200C5091D /* WeatherLocation.swift */; };
 		EAEB79332427C2D40034B89A /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB79322427C2D40034B89A /* APIKeys.swift */; };
 		EAEB793524284C4A0034B89A /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB793424284C4A0034B89A /* LocationDetailViewController.swift */; };
+		EAEB793724290DD10034B89A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEB793624290DD10034B89A /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		EACF3C7A2416D6F200C5091D /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 		EAEB79322427C2D40034B89A /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		EAEB793424284C4A0034B89A /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		EAEB793624290DD10034B89A /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		F9CA744F91AF782F146AFE36 /* libPods-WeatherGift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherGift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				EACF3C662416D6B600C5091D /* AppDelegate.swift */,
 				EACF3C682416D6B600C5091D /* SceneDelegate.swift */,
 				EACF3C7A2416D6F200C5091D /* WeatherLocation.swift */,
+				EAEB793624290DD10034B89A /* PageViewController.swift */,
 				EAEB793424284C4A0034B89A /* LocationDetailViewController.swift */,
 				EACF3C6A2416D6B600C5091D /* LocationListViewController.swift */,
 				EACF3C6C2416D6B600C5091D /* Main.storyboard */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EACF3C6B2416D6B600C5091D /* LocationListViewController.swift in Sources */,
+				EAEB793724290DD10034B89A /* PageViewController.swift in Sources */,
 				EAEB79332427C2D40034B89A /* APIKeys.swift in Sources */,
 				EACF3C7B2416D6F200C5091D /* WeatherLocation.swift in Sources */,
 				EACF3C672416D6B600C5091D /* AppDelegate.swift in Sources */,
