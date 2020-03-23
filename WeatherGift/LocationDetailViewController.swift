@@ -34,7 +34,7 @@ class LocationDetailViewController: UIViewController {
         
         dateLabel.text = ""
         placeLabel.text = weatherLocation.name
-        temperatureLabel.text = "---°"
+        temperatureLabel.text = "--°"
         summaryLabel.text = ""
     }
     
