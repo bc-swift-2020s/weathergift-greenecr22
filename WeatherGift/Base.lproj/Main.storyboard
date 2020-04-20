@@ -30,11 +30,15 @@
                                     <constraint firstAttribute="height" constant="44" id="Zng-YF-PwU"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="About" id="HQl-CM-yRT"/>
+                                    <barButtonItem title="About" id="HQl-CM-yRT">
+                                        <connections>
+                                            <segue destination="hrt-uT-JFb" kind="presentation" id="e0f-s0-OZt"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="OBM-Ja-vhE"/>
                                     <barButtonItem style="plain" id="ZH2-jS-VBa">
                                         <pageControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="g6Q-VQ-q5r">
-                                            <rect key="frame" x="83" y="4" width="155" height="37"/>
+                                            <rect key="frame" x="82.5" y="3.5" width="155" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="pageIndicatorTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,7 +50,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="S9p-eo-V2Z"/>
                                     <barButtonItem image="list.bullet" catalog="system" id="sg1-Jb-dZq">
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="DP3-tV-CIM"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="ShowList" modalPresentationStyle="fullScreen" id="DP3-tV-CIM"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -246,6 +250,77 @@
             </objects>
             <point key="canvasLocation" x="-845.625" y="100.35211267605634"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="0JH-rc-6it">
+            <objects>
+                <viewController id="hrt-uT-JFb" customClass="AboutViewController" customModule="WeatherGift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9TS-rT-lee">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwy-5d-ape">
+                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ksj-Xi-NTa"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Done" id="TxA-dY-11t">
+                                        <connections>
+                                            <action selector="doneButtonPressed:" destination="hrt-uT-JFb" id="5pR-fh-ml7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p33-nV-GDy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WeatherGift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3an-i7-1Ak">
+                                        <rect key="frame" x="26" y="8" width="268" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="64"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud.rain" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HEB-Mu-wTu">
+                                        <rect key="frame" x="8" y="104" width="304" height="246"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="powered_by_darksky" translatesAutoresizingMaskIntoConstraints="NO" id="2dC-WD-QDt">
+                                        <rect key="frame" x="8" y="385" width="152" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created by Chris Greene" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cd-en-Ec3">
+                                        <rect key="frame" x="17" y="356" width="286" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="build-with-google-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="KaC-gT-v5s">
+                                        <rect key="frame" x="160" y="385" width="152" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zwy-5d-ape" firstAttribute="leading" secondItem="2OX-yd-IRC" secondAttribute="leading" id="Kf4-UP-Xn0"/>
+                            <constraint firstItem="p33-nV-GDy" firstAttribute="top" secondItem="2OX-yd-IRC" secondAttribute="top" id="MrX-pb-hU7"/>
+                            <constraint firstItem="zwy-5d-ape" firstAttribute="trailing" secondItem="2OX-yd-IRC" secondAttribute="trailing" id="WwR-yq-W8w"/>
+                            <constraint firstItem="zwy-5d-ape" firstAttribute="top" secondItem="p33-nV-GDy" secondAttribute="bottom" id="cmv-5j-Y3y"/>
+                            <constraint firstItem="2OX-yd-IRC" firstAttribute="trailing" secondItem="p33-nV-GDy" secondAttribute="trailing" id="dgX-FU-pCQ"/>
+                            <constraint firstItem="p33-nV-GDy" firstAttribute="leading" secondItem="2OX-yd-IRC" secondAttribute="leading" id="mpD-Ss-4sX"/>
+                            <constraint firstItem="zwy-5d-ape" firstAttribute="bottom" secondItem="2OX-yd-IRC" secondAttribute="bottom" id="rTU-9v-o29"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2OX-yd-IRC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7L-vr-mq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-846" y="900"/>
+        </scene>
         <!--Location List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -323,9 +398,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="build-with-google-black.png" width="120" height="14"/>
         <image name="clear-day" width="256" height="256"/>
         <image name="cloud" catalog="system" width="64" height="42"/>
+        <image name="cloud.rain" catalog="system" width="64" height="62"/>
         <image name="list.bullet" catalog="system" width="64" height="44"/>
+        <image name="powered_by_darksky" width="356" height="142"/>
         <image name="raindrop" width="34" height="50"/>
         <image name="sun.max" catalog="system" width="64" height="62"/>
     </resources>
